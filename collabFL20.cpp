@@ -25,6 +25,7 @@ void menu6Dominguez();
 void menu22Turcios();
 void menu21Tourkakis();
 void menu8Fuentes();
+void menu20Swift();
 
 // ***************************************************************
 // END OF FUNCTION PROTOTYPE AREA
@@ -68,13 +69,13 @@ int main()
             case 5:                 // Dodd - call to function goes here
                 break;
             case 6:                 // Dominguez - call to function goes here
-                  menu6Dominguez();
+                menu6Dominguez();
                 break;
             case 7:                 // Fanta - call to function goes here
                 break;
             case 8:                 // Fuentes - call to function goes here
                 menu8Fuentes();
-				break;
+                break;
             case 9:                 // Garcia - call to function goes here
                 break;
             case 10:                 // Guerrero Rivas - call to function goes here
@@ -98,6 +99,7 @@ int main()
             case 19:                 // Sundance - call to function goes here
                 break;
             case 20:                 // Swift - call to function goes here
+                menu20Swift();
                 break;
             case 21:                 // Tourkakis - call to function goes here
                 menu21Tourkakis();
@@ -109,7 +111,7 @@ int main()
                 break;
             case 24:                 // Smiley - call to function goes here
                 menu24Smiley(11);
-                break;        
+                break;
             }
         }
     } while (choice != EXIT);
@@ -177,6 +179,7 @@ void menu21Tourkakis()
     cout << "Hello World" << endl;
     cout << endl;
 }
+
 // *****************************************************************************************
 // MENU ID:          24
 // FUNCTION:         menu24Smiley
@@ -237,40 +240,40 @@ void menu24Smiley(int numberOfTimes)
 // *****************************************************************************************
 void menu6Dominguez()
 {
-      int grade1;             //holds the first grade choice
-      int grade2;             //holds the second grade choice
-      int grade3;             //holds the third grade choice
-      int finalGrade;         //holds final grade choice to display computer
-      float average;	      // holds the grade average
+    int grade1;             //holds the first grade choice
+    int grade2;             //holds the second grade choice
+    int grade3;             //holds the third grade choice
+    int finalGrade;         //holds final grade choice to display computer
+    float average;	      // holds the grade average
 
 // Intro to Program.
     cout << "Welcome to Ivan Dominguez's Program!\n"
-           << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
-           << "Today we will calculate your final grade.\n"
-           << "Please enter your three grades. (0-100)\n";
-	cin  >> grade1 >> grade2 >> grade3;
+        << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+        << "Today we will calculate your final grade.\n"
+        << "Please enter your three grades. (0-100)\n";
+    cin >> grade1 >> grade2 >> grade3;
 
-// Math section, and average print out.
-    average = ( grade1 + grade2 + grade3 )/3;
+    // Math section, and average print out.
+    average = (grade1 + grade2 + grade3) / 3;
 
-	if (average <=100 && average >= 90)
+    if (average <= 100 && average >= 90)
     {
         finalGrade = 1;
-		cout << "Congraulations, you passed with an A!\n";
+        cout << "Congraulations, you passed with an A!\n";
     }
 
-	else if (average >= 80 && average < 90)
+    else if (average >= 80 && average < 90)
     {
-		cout << "Congraulations, you passed with a B!\n";
+        cout << "Congraulations, you passed with a B!\n";
         finalGrade = 2;
     }
 
-	else if (average >= 70 && average < 80)
+    else if (average >= 70 && average < 80)
     {
         cout << "Whew, you passed with a C!\n";
         finalGrade = 3;
     }
-	else if (average >= 0 && average < 70)
+    else if (average >= 0 && average < 70)
     {
         cout << "You failed.\n";
         finalGrade = 4;
@@ -282,71 +285,71 @@ void menu6Dominguez()
 
     switch (finalGrade)
     {
-        case 1:     // Call to really happy face computer.
-            cout  << "      .--------------------.    \n"
-                  << "      |.-````````````````-.|    \n"
-                  << "      ||     ^      ^     ||    \n"
-                  << "      ||    (O)    (O)    ||    \n"
-                  << "      ||        <         ||    \n"
-                  << "      ||    (        )    ||    \n"
-                  << "      ||     (______)     ||    \n"
-                  << "      |'-________________-'|    \n"
-                  << "      `-------)___(-------`     \n"
-                  << "       _________________        \n"
-                  << "      /::::::::::::::::/        \n"
-                  << "     /::::========::::/         \n"
-                  << "    `~~~~~~~~~~~~~~~~`          \n";
-            break;
+    case 1:     // Call to really happy face computer.
+        cout << "      .--------------------.    \n"
+            << "      |.-````````````````-.|    \n"
+            << "      ||     ^      ^     ||    \n"
+            << "      ||    (O)    (O)    ||    \n"
+            << "      ||        <         ||    \n"
+            << "      ||    (        )    ||    \n"
+            << "      ||     (______)     ||    \n"
+            << "      |'-________________-'|    \n"
+            << "      `-------)___(-------`     \n"
+            << "       _________________        \n"
+            << "      /::::::::::::::::/        \n"
+            << "     /::::========::::/         \n"
+            << "    `~~~~~~~~~~~~~~~~`          \n";
+        break;
 
-        case 2:     // Call to happy face computer.
-                cout  << "      .--------------------.    \n"
-                    << "      |.-````````````````-.|    \n"
-                    << "      ||     ^      ^     ||    \n"
-                    << "      ||    (O)    (O)    ||    \n"
-                    << "      ||        <         ||    \n"
-                    << "      ||                  ||    \n"
-                    << "      ||     (______)     ||    \n"
-                    << "      |'-________________-'|    \n"
-                    << "      `-------)___(-------`     \n"
-                    << "       _________________        \n"
-                    << "      /::::::::::::::::/        \n"
-                    << "     /::::========::::/         \n"
-                    << "    `~~~~~~~~~~~~~~~~`          \n";
-            break;   
+    case 2:     // Call to happy face computer.
+        cout << "      .--------------------.    \n"
+            << "      |.-````````````````-.|    \n"
+            << "      ||     ^      ^     ||    \n"
+            << "      ||    (O)    (O)    ||    \n"
+            << "      ||        <         ||    \n"
+            << "      ||                  ||    \n"
+            << "      ||     (______)     ||    \n"
+            << "      |'-________________-'|    \n"
+            << "      `-------)___(-------`     \n"
+            << "       _________________        \n"
+            << "      /::::::::::::::::/        \n"
+            << "     /::::========::::/         \n"
+            << "    `~~~~~~~~~~~~~~~~`          \n";
+        break;
 
-        case 3:     // Call to plain face computer.
-                cout  << "      .--------------------.    \n"
-                    << "      |.-````````````````-.|    \n"
-                    << "      ||     -      -     ||    \n"
-                    << "      ||    (o)    (o)    ||    \n"
-                    << "      ||        <         ||    \n"
-                    << "      ||                  ||    \n"
-                    << "      ||    ----------    ||    \n"
-                    << "      |'-________________-'|    \n"
-                    << "      `-------)___(-------`     \n"
-                    << "       _________________        \n"
-                    << "      /::::::::::::::::/        \n"
-                    << "     /::::========::::/         \n"
-                    << "    `~~~~~~~~~~~~~~~~`          \n";
-            break;
+    case 3:     // Call to plain face computer.
+        cout << "      .--------------------.    \n"
+            << "      |.-````````````````-.|    \n"
+            << "      ||     -      -     ||    \n"
+            << "      ||    (o)    (o)    ||    \n"
+            << "      ||        <         ||    \n"
+            << "      ||                  ||    \n"
+            << "      ||    ----------    ||    \n"
+            << "      |'-________________-'|    \n"
+            << "      `-------)___(-------`     \n"
+            << "       _________________        \n"
+            << "      /::::::::::::::::/        \n"
+            << "     /::::========::::/         \n"
+            << "    `~~~~~~~~~~~~~~~~`          \n";
+        break;
 
-        case 4:     // Call to bad face computer.                  
-                cout  << "      .--------------------.    \n"
-                    << "      |.-````````````````-.|    \n"
-                    << "      ||     v      v     ||    \n"
-                    << "      ||    (x)    (x)    ||    \n"
-                    << "      ||        <         ||    \n"
-                    << "      ||                  ||    \n"
-                    << "      ||    (~~~~~~~~)    ||    \n"
-                    << "      |'-________________-'|    \n"
-                    << "      `-------)___(-------`     \n"
-                    << "       _________________        \n"
-                    << "      /::::::::::::::::/        \n"
-                    << "     /::::========::::/         \n"
-                    << "    `~~~~~~~~~~~~~~~~`          \n";
+    case 4:     // Call to bad face computer.                  
+        cout << "      .--------------------.    \n"
+            << "      |.-````````````````-.|    \n"
+            << "      ||     v      v     ||    \n"
+            << "      ||    (x)    (x)    ||    \n"
+            << "      ||        <         ||    \n"
+            << "      ||                  ||    \n"
+            << "      ||    (~~~~~~~~)    ||    \n"
+            << "      |'-________________-'|    \n"
+            << "      `-------)___(-------`     \n"
+            << "       _________________        \n"
+            << "      /::::::::::::::::/        \n"
+            << "     /::::========::::/         \n"
+            << "    `~~~~~~~~~~~~~~~~`          \n";
 
-            break;
-      }
+        break;
+    }
 
     cout << "\n";
     cout << "Thank for using the Ivan Dominguez's Program.\n";
@@ -416,4 +419,39 @@ void menu8Fuentes()
     area = (pow(sidesLength, 2) * sidesNum) / (4 * tan(PI / sidesNum));     // Formula to calculate area
                                                                             // of polygon
     cout << "The area of your polygon is " << area << " square units" << endl;
+}
+// *****************************************************************************************
+// MENU ID:          20
+// FUNCTION:         menu20Swift
+// DESCRIPTION:      takes the average between 2 numbers
+// OUTPUT EXAMPLE:   User enters 5, 87
+//                   Program outputs the following:
+//                      46
+// *****************************************************************************************
+void menu20Swift()
+{
+    int value, value_end;
+    // value is some positive number n
+    int total = 0; // total holds the sum of the first n positive numbers
+    int number;
+    // the amount of numbers
+    float mean;
+    // the average of the first n positive numbers
+    cout << "Please enter the first number" << endl;
+    cin >> value;
+    cout << "Please enter the second number" << endl;
+    cin >> value_end;
+    if (value > 0)
+    {
+        for (number = value; number <= value_end; number++)
+        {
+            total = total + number;
+        }
+       
+        mean = static_cast<float>(total) / (value_end - value + 1);
+        cout << "The average between " << value << " and " << value_end << " is " << mean <<
+            endl;
+    }
+    else
+        cout << "Invalid input - integer must be positive" << endl;
 }
